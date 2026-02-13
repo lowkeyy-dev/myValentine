@@ -129,13 +129,13 @@
             heart.classList.add("heart");
             heart.innerHTML = "💕";
             heart.style.left = Math.random() * 100 + "vw";
-            heart.style.animationDuration = (6 + Math.random() * 6) + "s";  // 6–12 Sekunden
+            heart.style.animationDuration = (4 + Math.random() * 4) + "s";
             heart.style.fontSize = (14 + Math.random() * 30) + "px";
 
             document.body.appendChild(heart);
 
             // Entfernt Herz nach Animation → bessere Performance
-            setTimeout(() => heart.remove(), 1400);
+            setTimeout(() => heart.remove(), 8000);
         }
     }
     </script>
